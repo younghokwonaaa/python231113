@@ -5,3 +5,5 @@ def times(a,b):
 
 #함수 호출
 print(times(3,4))
+
+print(11)
