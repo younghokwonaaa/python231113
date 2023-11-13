@@ -21,7 +21,7 @@ for k, v in device.items():
     if k == "아이폰":
         print(k,v)
     else:
-        print(v, k)
+        print(v, k) 
         
 #전화번호 저장
 phone = {"kim":"1111","lee":"2222", "park":"3333"}
