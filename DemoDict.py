@@ -30,7 +30,7 @@ print("kang"not in phone)
 
 #참조를 전달
 p = phone
-p["kang"]="1234"
+p["kang"]="1234556677"
 print(phone)
 print(p)
 print(id(phone))
