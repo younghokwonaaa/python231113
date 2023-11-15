@@ -1,7 +1,9 @@
+#정규표현식 사용
 import re 
 
-f=open('c:\\work\\PV3.txt','rt')
-g=open('c:\\work\\PV3_copy.txt','wt',encoding='utf-8')
+#원본 로그파일(DataSet파일)
+f=open(r'c:\work\PV3.txt','rt')
+g=open('c:\\work\\PV3_copy1.txt','wt',encoding='utf-8')
 
 #많은 라인의 파일이면 
 #한번에 한줄씩 읽어서 처리한다.  
@@ -9,6 +11,7 @@ g=open('c:\\work\\PV3_copy.txt','wt',encoding='utf-8')
 line = f.readline()
 while (line != ''):
     if (re.search("\d{4}", line)):
+    #if (re.search("error", line)):
         g.write(line + "\n")
     line = f.readline()
 

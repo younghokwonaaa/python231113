@@ -19,4 +19,25 @@ result = re.search("\d{5}", "우리12 동네는 51200")
 print(result.group())
 
 
+strA = """다중라인
+으로 
 
+문자열저장"""
+
+c = re.compile("^.+")
+result = c.findall(strA, re.MULTILINE)
+print(result)
+
+
+#p = re.compile("^python\s\w+", re.MULTILINE)
+p = re.compile("^.+", re.MULTILINE)
+
+data = """python one
+ 
+life is too short
+python two
+
+you need python
+python three"""
+
+print(p.findall(data))
