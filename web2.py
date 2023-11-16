@@ -24,7 +24,7 @@ for post in posts:
     print("{0}, {1}, {2}".format(title1, price1, addr1))
     print("{0}, {1}, {2}".format(title.text.strip(), price.text.strip(), addr.text.strip()))
     f.write(f"{title1}, {price1}, {addr1}\n")
-    f.write(f"{title.text.strip()}, {price.text.strip()}, {addr.text.strip()}\n")
+    #f.write(f"{title.text.strip()}, {price.text.strip()}, {addr.text.strip()}\n")
     
 f.close()
 # <div class="card-desc">
