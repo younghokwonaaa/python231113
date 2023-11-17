@@ -8,6 +8,7 @@ class DemoWindow(QMainWindow):
         self.setupUI()
 
     def setupUI(self):
+        #죄측상단 + 폭과 높(x, y, width, height)
         self.setGeometry(800, 200, 300, 300)
 
         self.checkBox1 = QCheckBox("아이폰", self)
